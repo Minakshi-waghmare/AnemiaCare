@@ -12,7 +12,7 @@ const DEFAULT_TODOS = [
 ];
 
 const TIPS = [
-  'Did you know? Cooking in an iron kadhai can increase your food's iron content by up to 16%!',
+  'Did you know? Cooking in an iron kadhai can increase your food\'s iron content by up to 16%!',
   'Vitamin C helps your body absorb iron 6x better. Squeeze some lemon on your dal!',
   'Just 100g of jaggery contains 11mg of iron — almost your daily requirement.',
   'Beetroot juice can improve your hemoglobin levels in just 2 weeks of regular intake.',
