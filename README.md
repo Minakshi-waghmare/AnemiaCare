@@ -4,7 +4,7 @@
 
 ##  Project Overview
 
-**URL**: [https://lovable.dev/projects/anemiacare](https://anemia-care-chi.vercel.app/](https://www.google.com/search?q=https://lovable.dev/projects/anemiacare](https://anemia-care-chi.vercel.app/))
+**URL**: [https://anemia-care-chi.vercel.app/] ((https://anemia-care-chi.vercel.app/))
 
 ### The Problem
 
