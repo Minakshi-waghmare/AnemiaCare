@@ -4,7 +4,7 @@
 
 ##  Project Overview
 
-**URL**: [https://lovable.dev/projects/anemiacare](https://www.google.com/search?q=https://lovable.dev/projects/anemiacare)
+**URL**: [https://lovable.dev/projects/anemiacare](https://anemia-care-chi.vercel.app/](https://www.google.com/search?q=https://lovable.dev/projects/anemiacare](https://anemia-care-chi.vercel.app/))
 
 ### The Problem
 
@@ -12,12 +12,11 @@ Over 50% of women in India suffer from some form of anemia. Traditional tracking
 
 ### Our Solution
 
-A "mobile-first" web experience that allows users to:
+A web experience that allows users to:
 
   * **Track Hemoglobin (Hb) Levels**: Log blood test results and visualize trends over time.
   * **Personalized Diet Plans**: Get meal suggestions focused on Indian ingredients (rich in Iron, Vitamin B12, and Folic Acid).
   * **Symptom Checker**: A simple UI to monitor fatigue, dizziness, and other indicators.
-  * **Regional Language Support**: Designed to be inclusive for users across diverse Indian demographics.
 
 -----
 
@@ -69,16 +68,6 @@ npm i
 # Step 4: Start the development server
 npm run dev
 ```
-
------
-
-## Deployment & Domains
-
-To publish the latest version:
-
-1.  Open the project in [Lovable](https://www.google.com/search?q=https://lovable.dev/projects/anemiacare).
-2.  Click **Share** \> **Publish**.
-3.  To link a custom domain (e.g., `www.anemiacare.in`), go to **Settings** \> **Domains**.
 
 -----
 
