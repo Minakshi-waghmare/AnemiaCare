@@ -1,0 +1,45 @@
+CREATE DATABASE IF NOT EXISTS women_health_db;
+USE women_health_db;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS user_profiles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  dob DATE NOT NULL,
+  height DECIMAL(5,2) NOT NULL,
+  weight DECIMAL(5,2) NOT NULL,
+  diet_preference VARCHAR(100) NOT NULL,
+  meals_per_day VARCHAR(100) NOT NULL,
+  water_intake VARCHAR(100) NOT NULL,
+  exercise_frequency VARCHAR(100) NOT NULL,
+  health_goal VARCHAR(100) NOT NULL,
+  last_period_date DATE NOT NULL,
+  cycle_length ENUM('21', '28', '35', 'Not sure') NOT NULL,
+  symptoms JSON,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS hb_readings (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  hb_value FLOAT NOT NULL,
+  status VARCHAR(50),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS menstrual_cycles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  start_date DATE NOT NULL,
+  cycle_length INT DEFAULT 28,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+

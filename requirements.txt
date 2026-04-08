@@ -1,0 +1,27 @@
+# AnemiaCare Health Hub - Required Stack & Setup
+
+## Frontend
+- Node.js (v18+)
+- Vite
+- React
+- Axios
+- Chart.js
+- Tailwind CSS
+- Lucide React
+
+## Backend
+- Node.js
+- Express
+- MySQL 8.x
+- mysql2 (Driver)
+- bcryptjs (Hashing)
+- jsonwebtoken (Auth)
+- dotenv (Environment)
+
+## Database (MySQL)
+- DB Name: women_health_db
+- Setup: Use `backend/schema.sql` to initialize tables.
+
+## Environment Variables
+- Root `.env`: Frontend configuration (VITE_API_URL).
+- Backend `.env`: Server & DB credentials (PORT, DB_HOST, DB_USER, DB_PASS, DB_NAME, JWT_SECRET).
